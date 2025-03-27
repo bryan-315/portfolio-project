@@ -23,7 +23,7 @@ color: var(--platinum);
 
 const ScrollDown = styled.div`
 position: absolute;
-bottom: 20px;
+bottom: 40px;
 font-size: 1rem;
 color: var(--platinum);
 animation: bounce 2s infinite;

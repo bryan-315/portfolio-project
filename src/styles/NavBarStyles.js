@@ -38,8 +38,7 @@ transition: background-color 0.7s ease, color 0.7s ease;
 }
 
 &:hover {
-    color: var(--gold);
-    background-color: var(--violet);
+    background-color: var(--black);
 }
 
 @media (max-width: 768px) {
