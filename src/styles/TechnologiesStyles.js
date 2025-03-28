@@ -12,6 +12,11 @@ export const TechSection = styled.section`
     margin-bottom: 3rem;
     color: var(--gold);
   }
+
+  p {
+    margin-bottom: 5rem;
+
+  }
 `;
 
 export const TechGrid = styled.div`
@@ -21,7 +26,7 @@ export const TechGrid = styled.div`
   justify-items: center;
 `;
 
-export const TechItem = styled.div`
+export const TechItem = styled.a`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,7 +37,31 @@ export const TechItem = styled.div`
     font-weight: bold;
   }
 
+  span {
+    position: absolute;
+    bottom: 100%;
+    transform: translateY(-0.5rem);
+    background: none;
+    color: ${({ $color }) => $color || 'var(--gold)'}; 
+    padding: 0.3rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+  }
+
+  &:hover span {
+    opacity: 1;
+  }
+
+
   &:hover {
     transform: scale(1.1);
+    filter: brightness(1.2);
   }
+
+  
+
 `;
