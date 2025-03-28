@@ -6,6 +6,8 @@ import {
 } from "../../styles/AboutMeStyles"
 
 import aboutImage from '../../assets/bryanArt1.jpg'
+
+
 const AboutMe = () => {
 
     return (
@@ -21,7 +23,7 @@ const AboutMe = () => {
             In a team setting, I communicate clearly and always aim to make my teammates' lives easier.
             </p>
             </AbtMeText>
-            <AbtMeImg src={aboutImage} />
+            <AbtMeImg src={aboutImage} alt="Drawing of bryan coding on a computer"/>
         </AbtMeSect>
     )
 }

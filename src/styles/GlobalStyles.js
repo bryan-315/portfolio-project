@@ -17,8 +17,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Chivo Mono', sans-serif;
-    background-color: var(--gold);
-    color: var(--black);
+    background-color: var(--black);
+    color: var(--gold);
 }
 
 a {

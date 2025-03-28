@@ -7,7 +7,7 @@ color: var(--gold);
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
-padding-top: 10vh;
+padding: 20vh 1vw ;
 align-items: center;
 text-align: center;
 `;
