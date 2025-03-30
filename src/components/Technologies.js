@@ -1,13 +1,22 @@
-import { TechSection, TechGrid, TechItem } from '../styles/TechnologiesStyles';
+import { TechSection, TechGrid, TechItem, TechImage } from '../styles/TechnologiesStyles';
 import { technologiesArr } from '../data/technologies';
-
+import techPic from '../assets/funnyTechImg.jpg'
 
 const Technologies = () => {
 
     return (
         <TechSection>
             <h1>My Frontend and Backend Tools</h1>
-            <p>I use these tools regularly to build full-stack web apps — from frontend interfaces to backend APIs and databases.</p>
+            <TechImage src={techPic} />
+            <p>
+                I use these tools regularly to build full-stack 
+                web apps — from frontend interfaces to backend APIs 
+                and databases. 
+            </p>
+            <p>
+            And this stack is just the beginning — I'm 
+            constantly growing and adding new tools to the mix.
+            </p>
 
             <TechGrid>
                 {technologiesArr.map((tech) => {

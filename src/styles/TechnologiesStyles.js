@@ -10,11 +10,13 @@ export const TechSection = styled.section`
   h1 {
     font-size: 2.5rem;
     margin-bottom: 3rem;
+    margin-top: 6rem;
     color: var(--gold);
   }
 
   p {
     margin-bottom: 5rem;
+    font-size: 1.7rem;
 
   }
 `;
@@ -61,7 +63,19 @@ export const TechItem = styled.a`
     transform: scale(1.1);
     filter: brightness(1.2);
   }
+`;
 
-  
+export const TechImage = styled.img`
+  max-width: 300px;
+  max-height: 250px;
+  width: 100%;
+  height: auto;
+  margin: 2rem auto 4rem;
+  display: block;
+  border-radius: 1rem;
+  border: 3px solid var(--platinum);
 
+  @media (min-width: 768px) {
+    max-width: 400px;
+  }
 `;
