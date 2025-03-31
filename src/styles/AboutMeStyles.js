@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const AbtMeSect = styled.section`
 height: 100vh;
-padding: 10rem 6rem;
+padding: 2rem;
 background-color: var(--dark-blue);
 color: var(--platinum);
 display: flex;
@@ -17,7 +17,6 @@ gap: 3rem;
     flex-direction: column;
     justify-content: start;
     height: 80vh;
-    padding-top: 5rem;
 }
 `
 
@@ -62,6 +61,8 @@ border: 3px solid var(--platinum);
 @media (max-width: 768px) {
     max-width: 250px;
     max-height: 200px;
+    flex: none;
+    align-self: center;
 }
 `;
 
