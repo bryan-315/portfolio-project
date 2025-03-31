@@ -6,7 +6,7 @@ import {
     ScrollDown,
     HeroImage
 } from '../../styles/HeroStyles';
-import heroIcon from '../../assets/bigBrain.jpg'
+import heroIcon from '../../assets/monkeybrain.jpg'
 
 const Hero = () => {
 
@@ -14,7 +14,7 @@ const Hero = () => {
         <HeroSection>
             <HeroImage src={heroIcon} alt='A picture of a very active brain'/>
             <HeroTitle>Welcome To The Bryan Zone</HeroTitle>
-            <HeroSubtitle>Bryan Cruz: Web Developper & Creative Genius</HeroSubtitle>
+            <HeroSubtitle>Bryan Cruz: Web Developer & Creative Genius</HeroSubtitle>
             <ScrollDown>↓ Scroll Down for More</ScrollDown>
         </HeroSection>
     );

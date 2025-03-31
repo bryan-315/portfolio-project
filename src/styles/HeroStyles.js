@@ -7,7 +7,7 @@ color: var(--gold);
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
-padding: 20vh 1vw ;
+padding: 10vh 1vw ;
 align-items: center;
 text-align: center;
 `;
@@ -18,7 +18,7 @@ font-size: 3rem;
 
 const HeroSubtitle = styled.p`
 font-size: 1.5rem;
-color: var(--platinum);
+color: var(--light-blue);
 `;  
 
 const ScrollDown = styled.div`
@@ -41,6 +41,11 @@ border-radius: 50%;
 object-fit: cover;
 border: 3px solid var(--platinum);
 margin-bottom: 5px;
+
+@media (min-width: 768px) {
+    width: 25rem;
+    height: 21rem;
+}
 `;
 
 

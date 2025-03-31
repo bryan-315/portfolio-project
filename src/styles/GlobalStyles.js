@@ -3,12 +3,14 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
 :root {
     --black: #222322;
-    --gold: #BDA414;
+    --gold: #F1CD00;
     --dark-blue: #142C5A;
     --platinum: #DDDDDD;
     --violet: #28013B;
+    --light-blue: #748CAB ;
+    --lavender: #CAA8F5;
+    --red: #95190C;
 }
-
 *, *::before, *::after {
     box-sizing: border-box;
 }

@@ -6,7 +6,7 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 padding: 0;
-background-color: var(--dark-blue);
+background-color: var(--gold);
 position: sticky;
 top: 0;
 height: 70px;
@@ -25,7 +25,7 @@ align-items: center;
 justify-content: center;
 text-align: center;
 height: 100%;
-color: var(--platinum);
+color: var(--black);
 font-weight: bold;
 text-decoration: none;
 font-size: 1.25rem;
@@ -38,7 +38,8 @@ transition: background-color 0.7s ease, color 0.7s ease;
 }
 
 &:hover {
-    background-color: var(--black);
+    background-color: black;
+    color: var(--platinum);
 }
 
 @media (max-width: 768px) {

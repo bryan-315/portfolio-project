@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const TechSection = styled.section`
   min-height: 100vh;
-  padding: 4rem 2rem;
+  padding: 0rem 2rem;
   background-color: var(--black);
   color: var(--platinum);
   text-align: center;

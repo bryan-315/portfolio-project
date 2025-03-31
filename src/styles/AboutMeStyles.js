@@ -4,7 +4,7 @@ import styled from "styled-components";
 const AbtMeSect = styled.section`
 height: 100vh;
 padding: 10rem 6rem;
-background-color: var(--violet);
+background-color: var(--dark-blue);
 color: var(--platinum);
 display: flex;
 align-items: center;
