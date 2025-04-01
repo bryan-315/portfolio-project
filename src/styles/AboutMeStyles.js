@@ -16,7 +16,8 @@ gap: 3rem;
 @media (max-width: 768px) {
     flex-direction: column;
     justify-content: start;
-    height: 80vh;
+    height: auto;
+    min-height: 100vh;
 }
 `
 

@@ -3,8 +3,8 @@ import { useEffect } from 'react';
 import {Nav, NavItem, BurgerToggle } from '../styles/NavBarStyles';
 import { AiFillHome as HomeIcon } from 'react-icons/ai';
 import { MdDeveloperBoard as TechIcon } from "react-icons/md";
-import { VscDebug } from "react-icons/vsc";
-import { BsMailbox2 } from "react-icons/bs";
+import { VscDebug as ProjectsIcon } from "react-icons/vsc";
+import { BsMailbox2 as ContactIcon } from "react-icons/bs";
 import { TiThMenuOutline as BurgerIcon } from "react-icons/ti";
 import { IoMdCloseCircleOutline as CloseIcon } from "react-icons/io";
 
@@ -19,10 +19,14 @@ const NavBar = () => {
         const handleResize = () => {
             if (window.innerWidth < 768) {
                 setMobile(true)
-            } else setMobile(false)
+                console.log('mobile')
+            } else {
+                setMobile(false);
+                console.log('desktop')
+            }
         }
         window.addEventListener('resize', handleResize)
-        return (window.removeEventListener('resize', handleResize))
+        return (() => window.removeEventListener('resize', handleResize));
     }, [])
     
         return (
@@ -40,11 +44,11 @@ const NavBar = () => {
                 </NavItem>
                 <NavItem to={'/projects'}>
                     Projects
-                    <VscDebug style={{ marginLeft: '0.5rem' }} />
+                    <ProjectsIcon style={{ marginLeft: '0.5rem' }} />
                 </NavItem>
                 <NavItem to={'/contact'}>
                     Contact
-                    <BsMailbox2 style={{ marginLeft: '0.5rem' }} />
+                    <ContactIcon style={{ marginLeft: '0.5rem' }} />
                 </NavItem>
             </>}
         </Nav>

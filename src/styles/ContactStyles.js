@@ -27,6 +27,8 @@ box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
     text-decoration: underline;
     transition: color 0.2s ease;
     font-size: 1.3rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
 
         &:hover {
             color: var(--lavender);
@@ -49,7 +51,7 @@ font-size: 1rem;
         min-width: 120px;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
     font-size: 0.95rem;
     }
 `;
