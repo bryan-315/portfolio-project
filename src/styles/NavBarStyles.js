@@ -50,7 +50,19 @@ transition: background-color 0.7s ease, color 0.7s ease;
 }
 `;
 
+const BurgerToggle = styled.div`
+margin: 0.3rem auto 0.1rem auto;
+cursor: pointer;
+z-index: 200;
+    svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        color: black;
+    }
+`;
+
 export {
     Nav,
-    NavItem
+    NavItem,
+    BurgerToggle
 };

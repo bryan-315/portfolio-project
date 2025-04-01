@@ -15,7 +15,7 @@ import Technologies from './components/Technologies';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import MissingRoute from './components/MissingRoute';
-
+import ScrollUp from './components/ScrollUpFunction';
 
 const routesArray = [
     {
@@ -41,6 +41,7 @@ const App = ()=> {
     return (
         <Router>
             <NavBar />
+            <ScrollUp />
             <Routes>
                 {routesArray.map(({ path, element }, index) => 
                 <Route path={path} element={element} key={index} />)}
